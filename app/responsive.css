@@ -1,0 +1,63 @@
+@media all and (max-width: 1199px) {
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 767px) {
+  .stories-row::before,
+  .link-box {
+    display: none;
+  }
+  .sertabbox {
+    padding: 15px;
+    text-align: center;
+  }
+  .abt-heading {
+    width: 100%;
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .main-heading h3 {
+    font-size: 36px;
+  }
+  .test-img {
+    display: none;
+  }
+  .ban-cont h1,
+  .ban-cont h1 span {
+    font-size: 40px;
+  }
+  section.gallery-sec {
+    text-align: center;
+  }
+  section.test-sec {
+    text-align: center;
+  }
+
+  section.faq-sec {
+    text-align: center;
+  }
+  .abt-img-box {
+    margin-top: 1rem;
+    height: 500px;
+    position: relative;
+    top: 0;
+  }
+  .abt-cont {
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .abt-cont {
+    padding-left: 0;
+  }
+  footer.footer-sec {
+    text-align: center;
+  }
+}
+@media all and (max-width: 567px) {
+}
+@media all and (max-width: 414px) {
+}
+@media all and (max-width: 320px) {
+}
