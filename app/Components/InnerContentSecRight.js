@@ -16,7 +16,18 @@ const InnerContentSecRight = ({ sectitle, secimg, seccont }) => {
             </div>
             <div className="col-12 col-md-5">
               <div className="abt-cont mt-5">
-                <p>{seccont}</p>
+                {seccont.map((item, index) => (
+                  <div key={index}>
+                    {item.type === "paragraph" && <p>{item.content}</p>}
+                    {item.type === "ul" && (
+                      <ul>
+                        {item.content.map((listItem, listIndex) => (
+                          <li key={listIndex}>{listItem}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
             <div className="col-12 col-md-6 offset-md-1 position-relative">

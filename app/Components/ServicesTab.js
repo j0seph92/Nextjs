@@ -9,7 +9,7 @@ const handleButtonClick = () => {
 
 const ServicesTab = () => {
   const divStyle = {
-    backgroundImage: 'url("../images/ser-img.png")',
+    backgroundImage: 'url("../images/1631-min.webp")',
   };
   return (
     <>

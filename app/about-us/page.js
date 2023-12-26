@@ -25,9 +25,14 @@ export default function AboutUs() {
   ];
   return (
     <>
-      <InnerBanner />
-      <InnerContentSecRight />
-      <InnerContentSecLeft />
+      <InnerBanner
+        welcometxt="Welcome to Future Avo"
+        heading="Looking for a Reliable Custom"
+        headingcolor="Web Design Company?"
+        bancont="Are you on the hunt for the top web design agency? We're one of the best web design companies and pioneers of designing websites that make waves in the digital ocean."
+      />
+      {/* <InnerContentSecRight />
+      <InnerContentSecLeft /> */}
       <FaqHome faqData={faqData} />
       <BlogHome />
     </>

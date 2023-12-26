@@ -31,7 +31,7 @@ const page = () => {
         welcometxt="Welcome to Future Avo"
         heading="Looking for a Reliable Custom"
         headingcolor="Web Design Company?"
-        bancont="Are you on the hunt for the top web design agency? We’re one of the best web design companies and pioneers of designing websites that make waves in the digital ocean."
+        bancont="Are you on the hunt for the top web design agency? We're one of the best web design companies and pioneers of designing websites that make waves in the digital ocean."
       />
       <section className="stroies-sec p-5">
         <div className="container">

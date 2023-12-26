@@ -19,7 +19,18 @@ const InnerContentSecMiddle = ({ sectitle, secimg, seccont }) => {
             <div className="col-md-8">
               <div className="icsm-cont">
                 <HeadingMain label={sectitle} extclass="" />
-                <p>{seccont}</p>
+                {seccont.map((item, index) => (
+                  <div key={index}>
+                    {item.type === "paragraph" && <p>{item.content}</p>}
+                    {item.type === "ul" && (
+                      <ul>
+                        {item.content.map((listItem, listIndex) => (
+                          <li key={listIndex}>{listItem}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
                 <ButtonTransparent
                   label="Get Started"
                   onClick={handleButtonClick}

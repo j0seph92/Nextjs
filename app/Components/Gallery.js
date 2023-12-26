@@ -7,7 +7,10 @@ const Gallery = () => {
   const imageFiles = ["gallery-1.png", "gallery-3.png", "gallery-5.png"];
   const imageFiles2 = ["gallery-2.png", "gallery-4.png", "gallery-6.png"];
   const imageFiles3 = "/images/gallery-7.png";
-  const shape = "/images/image_effects.jpg";
+  const shape1 = "/images/image_effects.jpg";
+  const shape = {
+    backgroundImage: `url(/images/image_effects.jpg)`,
+  };
   return (
     <>
       <section className="gallery-sec py-5">
@@ -29,7 +32,7 @@ const Gallery = () => {
           </div>
           <div className="row mt-3 gy-3 gy-md-0 gx-0 gx-md-3">
             <div className="col-12 col-md-6">
-              <div className="image-gallery">
+              <div className="image-gallery image-gallery-col1">
                 {imageFiles.map((filename, index) => (
                   <div className="gal-img-box">
                     <img
@@ -46,19 +49,16 @@ const Gallery = () => {
                       width={590}
                       height={680}
                     />
-                    <img
-                      src={shape} // Path to the image
-                      alt={`FutureAVO - Gallery ${index + 1}`}
-                      className="img-fluid lazy gall-img gall-sec-overlay"
-                      width={590}
-                      height={680}
-                    />
+                    <div
+                      className={`gall-sec-overlay ${index + 1}`}
+                      style={shape}
+                    ></div>
                   </div>
                 ))}
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="image-gallery">
+              <div className="image-gallery image-gallery-col2">
                 {imageFiles2.map((filename, index) => (
                   <div className="gal-img-box">
                     <img
@@ -75,13 +75,11 @@ const Gallery = () => {
                       width={590}
                       height={680}
                     />
-                    <img
-                      src={shape} // Path to the image
-                      alt={`FutureAVO - Gallery ${index + 1}`}
-                      className="img-fluid lazy gall-img gall-sec-overlay"
-                      width={590}
-                      height={680}
-                    />
+
+                    <div
+                      className={`gall-sec-overlay ${index + 1}`}
+                      style={shape}
+                    ></div>
                   </div>
                 ))}
               </div>
@@ -103,13 +101,7 @@ const Gallery = () => {
                     width={1200}
                     height={530}
                   />
-                  <img
-                    src={shape}
-                    alt="FutureAVO - Gallery"
-                    className="img-fluid lazy gall-img gall-sec-overlay"
-                    width={1200}
-                    height={530}
-                  />
+                  <div className="gall-sec-overlay" style={shape}></div>
                 </div>
               </div>
             </div>

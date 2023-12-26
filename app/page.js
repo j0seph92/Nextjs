@@ -44,7 +44,7 @@ export default function Home() {
       <Gallery />
       <StoriesSec />
       <Testimonial />
-      <VideoSec videolink="#" videoimg="video-ai.png" />
+      <VideoSec videolink="#" videoimg="18165-min.webp" />
       <FaqHome
         faqDatatxt="Do you have some queries that need to be answered? Our experts
                   have offered their expert guidance by answering some common
