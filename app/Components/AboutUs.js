@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
 import HeadingMain from "./HeadingMain";
-import ButtonTransparent from "./ButtonTransparent";
+import ButtonTransparentLink from "./ButtonTransparentLink";
+import { FaArrowRight } from "react-icons/fa6";
 
-const handleButtonClick = () => {
-  alert("Button clicked!");
-};
 const AboutUs = () => {
   return (
     <>
@@ -42,17 +40,18 @@ const AboutUs = () => {
                   website to secure sales to effective marketing, reach out to
                   us for help.
                 </p>
-                <ButtonTransparent
+                <ButtonTransparentLink
                   label="Learn More"
-                  onClick={handleButtonClick}
+                  onClick="/about-us"
                   extclass=""
+                  icon={FaArrowRight}
                 />
               </div>
             </div>
             <div className="col-12 col-md-6 offset-md-1 position-relative">
               <div className="abt-img-box">
                 <img
-                  src="/images/abt-img.jpg"
+                  src="/images/63118-min.webp"
                   alt="futureAVO"
                   className="img-fluid lazy"
                   width={580}

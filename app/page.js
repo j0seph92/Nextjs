@@ -7,7 +7,6 @@ import StoriesSec from "./Components/StoriesSec";
 import VideoSec from "./Components/VideoSec";
 import FaqHome from "./Components/FaqHome";
 import AboutUs from "./Components/AboutUs";
-import BlogHome from "./Components/BlogHome";
 import Testimonial from "./Components/Testimonial";
 import ServicesTab from "./Components/ServicesTab";
 
@@ -37,14 +36,13 @@ export default function Home() {
   return (
     <>
       <HomeBanner />
+      <WhyChooseUsSec />
+      <Gallery />
       <BrandLogo />
       <ServicesTab />
-      <WhyChooseUsSec />
       <StatsCounter />
-      <Gallery />
       <StoriesSec />
       <Testimonial />
-      <VideoSec videolink="#" videoimg="18165-min.webp" />
       <FaqHome
         faqDatatxt="Do you have some queries that need to be answered? Our experts
                   have offered their expert guidance by answering some common
@@ -52,7 +50,6 @@ export default function Home() {
         faqData={faqData}
       />
       <AboutUs />
-      <BlogHome />
     </>
   );
 }

@@ -4,7 +4,6 @@ import VideoSec from "../Components/VideoSec";
 import InnerContentSecRight from "../Components/InnerContentSecRight";
 import InnerContentSecLeft from "../Components/InnerContentSecLeft";
 import InnerContentSecMiddle from "../Components/InnerContentSecMiddle";
-import BlogHome from "../Components/BlogHome";
 import FaqHome from "../Components/FaqHome";
 
 const page = () => {
@@ -12,7 +11,7 @@ const page = () => {
     {
       type: "paragraph",
       content: [
-        "In this era, branding is the key that opens doors to incredible opportunities for a company, and the company logo plays an integral role. Unleash the power of your brand as you hire a professional logo designer for custom designs logos. Are you looking for professional logo design services? We’ve got your back. As one of the top logo design companies, we take pride in creating professional logo designs that transform ideas into iconic brand symbols.",
+        "In this era, branding is the key that opens doors to incredible opportunities for a company, and the company logo plays an integral role. Unleash the power of your brand as you hire a professional logo designer for custom designs logos. Are you looking for professional logo design services? We've got your back. As one of the top logo design companies, we take pride in creating professional logo designs that transform ideas into iconic brand symbols.",
         <br></br>,
         <br></br>,
         "Here's all you need to know. ",
@@ -29,7 +28,7 @@ const page = () => {
         "Through extensive research and brainstorming sessions, our talented team of designers conceptualizes unique and impactful logo ideas. Our commitment to excellence and attention to detail lead to impeccable designs.",
         <br></br>,
         <br></br>,
-        "So, if you’re looking for custom logo designers for hire? Just schedule a quick call with us!",
+        "So, if you're looking for custom logo designers for hire? Just schedule a quick call with us!",
       ],
     },
   ];
@@ -37,10 +36,10 @@ const page = () => {
     {
       type: "paragraph",
       content: [
-        "Our qualified and creative designers design a professional logo by initiating an in-depth analysis of our client’s brand, diving deep into the core values. A keen eye for aesthetics and a clear understanding of branding is what puts us above the rest in the game.",
+        "Our qualified and creative designers design a professional logo by initiating an in-depth analysis of our client's brand, diving deep into the core values. A keen eye for aesthetics and a clear understanding of branding is what puts us above the rest in the game.",
         <br></br>,
         <br></br>,
-        "Here’s what to expect when you hire a professional logo designer at our agency:",
+        "Here's what to expect when you hire a professional logo designer at our agency:",
       ],
     },
     {
@@ -56,7 +55,7 @@ const page = () => {
     {
       type: "paragraph",
       content: [
-        "Don’t compromise on your logo design anymore; the future of branding is here with Future Avo.",
+        "Don't compromise on your logo design anymore; the future of branding is here with Future Avo.",
       ],
     },
   ];
@@ -92,28 +91,29 @@ const page = () => {
         headingcolor="We've Got You!"
         bancont="Do you want to get professional logo designs? Say no more! The best logo design company is at your service to create logos that turn heads and spark curiosity."
       />
-      <VideoSec videolink="#" videoimg="ser-img.png" />
+      <VideoSec
+        videolink="#"
+        videoimg="people-generating-images-using-artificial-intelligence-laptop-min.webp"
+      />
       <InnerContentSecRight
         sectitle="Redefine Brilliance with Our Professional Logo Design Services"
-        secimg="serimg2.png"
+        secimg="beautiful-festive-gift-wrap-inside-golden-black-background-3d-illustration-3d-rendering-min.webp"
         seccont={contentRight}
       />
       <InnerContentSecMiddle
         sectitle="Get One-Of-A-Kind Logo Masterpieces with Our  Custom Logos Design Company "
-        secimg="inner-img.png"
+        secimg="2151003709-min.webp"
         seccont={contentMiddle}
       />
       <InnerContentSecLeft
         sectitle="Why Choose Our Professional Logo Design Company?"
-        secimg="abt-img.jpg"
+        secimg="pair-rings-with-black-orange-design-bottom-min.webp"
         seccont={contentLeft}
       />
-      <div className="p-5"></div>
       <FaqHome
-        faqDatatxt="Whether it’s queries about our services or anything else, we’re here to assist our clients at all times. Here are some top FAQs."
+        faqDatatxt="Whether it's queries about our services or anything else, we're here to assist our clients at all times. Here are some top FAQs."
         faqData={faqData}
       />
-      <BlogHome />
     </>
   );
 };

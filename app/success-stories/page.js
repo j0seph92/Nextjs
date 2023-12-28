@@ -1,37 +1,40 @@
 import React from "react";
 import InnerBanner from "../Components/InnerBanner";
 import FaqHome from "../Components/FaqHome";
-import BlogHome from "../Components/BlogHome";
 import Testimonial from "../Components/Testimonial";
 import SubtitleTop from "../Components/SubtitleTop";
 import HeadingMain from "../Components/HeadingMain";
-import Image from "next/image";
 
 const page = () => {
   const faqData = [
     {
-      question: "Log In To Futureavo",
+      question: "Can I get my logo redesigned by your team?",
       answer:
-        "Ullamcorper A Lacus Vestibulum Sed Arcu. Pellentesque Dignissim Enim Sit Congue Nisivitae Suscipit Tellus Mauris.",
+        "Yes, you absolutely can. At our company, our team doesn't just design logos for companies and individuals but also handles redesigning projects or tasks that require updating or tweaking the design a bit. Therefore, don't worry; we can help you out.",
     },
     {
-      question: "Log In To Futureavo",
+      question: "What should I do if I already have a website?",
       answer:
-        "Ullamcorper A Lacus Vestibulum Sed Arcu. Pellentesque Dignissim Enim Sit Congue Nisivitae Suscipit Tellus Mauris.",
+        "It depends on what you need, even if you already have a website. If you aren't satisfied with the existing one, our team can redesign it and create a new one for you. If not, we can also update the existing one. You can schedule a call with us to discuss these requirements.",
     },
     {
-      question: "Log In To Futureavo",
+      question: "What digital marketing services do you offer?",
       answer:
-        "Ullamcorper A Lacus Vestibulum Sed Arcu. Pellentesque Dignissim Enim Sit Congue Nisivitae Suscipit Tellus Mauris.",
+        "At Future Avo, we offer a plethora of digital marketing solutions to establish a reputation in the online world. Our services include search engine optimization services, pay-per-click marketing, search engine optimization marketing services, etc.",
+    },
+    {
+      question: "What sort of clients do you deal with?",
+      answer:
+        "One of the traits that set us apart from other companies in the industry is our unmatched experience and diverse portfolio. Throughout our career, we've successfully assisted many clients from various industries and backgrounds. Put simply, we're skilled in dealing with all sorts of clients.",
     },
   ];
   return (
     <>
       <InnerBanner
         welcometxt="Welcome to Future Avo"
-        heading="Looking for a Reliable Custom"
-        headingcolor="Web Design Company?"
-        bancont="Are you on the hunt for the top web design agency? We're one of the best web design companies and pioneers of designing websites that make waves in the digital ocean."
+        heading="Get Inspired by Real Stories of "
+        headingcolor="Our Clients"
+        bancont="At Future Avo, we take immense pride in being a top choice for clients. Don't believe us? Discover how our digital solutions have transformed the lives of our clients, leading to remarkable success. "
       />
       <section className="stroies-sec p-5">
         <div className="container">
@@ -39,7 +42,7 @@ const page = () => {
             <div className="col-12 col-sm-12 col-md-8">
               <SubtitleTop label="Success Stories" extclass="text-center" />
               <HeadingMain
-                label="Generate In Seconds Using AI In The Most Easy Way"
+                label="Here's a Glimpse of What Clients Gain When Working with Us"
                 extclass="text-center"
               />
             </div>
@@ -49,7 +52,7 @@ const page = () => {
               <div className="stories-box stories-cont-inner">
                 <div className="stories-img">
                   <img
-                    src="/images/process-ai-1.png"
+                    src="/images/1668-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={500}
@@ -62,11 +65,11 @@ const page = () => {
             <div className="col-12 col-md-6">
               <div className="stories-box stories-cont-inner">
                 <div className="stories-cont ">
-                  <h4>Log In To Futureavo</h4>
+                  <h4>Brand Consistency</h4>
                   <p>
-                    We Have Years Of Experience And A Team Of Experts In IT
-                    Services Who Are Dedicated To Providing You With Top-Notch
-                    Service
+                    We ensure our services align seamlessly with our client's
+                    brand identities, creating a cohesive and impactful online
+                    presence.
                   </p>
                 </div>
               </div>
@@ -76,11 +79,11 @@ const page = () => {
             <div className="col-12 col-md-6">
               <div className="stories-box stories-cont-inner">
                 <div className="stories-cont ">
-                  <h4>Log In To Futureavo</h4>
+                  <h4>Enhanced User Experience</h4>
                   <p>
-                    We Have Years Of Experience And A Team Of Experts In IT
-                    Services Who Are Dedicated To Providing You With Top-Notch
-                    Service
+                    We are recognized for elevating the overall user experience
+                    with our services. We aim for higher engagement and customer
+                    satisfaction.
                   </p>
                 </div>
               </div>
@@ -89,7 +92,7 @@ const page = () => {
               <div className="stories-box stories-cont-inner">
                 <div className="stories-img">
                   <img
-                    src="/images/process-ai-2.png"
+                    src="/images/35042-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={500}
@@ -105,7 +108,7 @@ const page = () => {
               <div className="stories-box stories-cont-inner">
                 <div className="stories-img">
                   <img
-                    src="/images/process-ai-3.png"
+                    src="/images/medium-shot-woman-wearing-vr-glasses-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={500}
@@ -118,11 +121,11 @@ const page = () => {
             <div className="col-12 col-md-6">
               <div className="stories-box stories-cont-inner">
                 <div className="stories-cont ">
-                  <h4>Log In To Futureavo</h4>
+                  <h4>Improved Online Visibility</h4>
                   <p>
-                    We Have Years Of Experience And A Team Of Experts In IT
-                    Services Who Are Dedicated To Providing You With Top-Notch
-                    Service
+                    Our highly customized services can help put our clients on
+                    the map by providing services that catch the eye of the
+                    audience enhancing online visibility.
                   </p>
                 </div>
               </div>
@@ -133,7 +136,6 @@ const page = () => {
 
       <Testimonial />
       <FaqHome faqData={faqData} />
-      <BlogHome />
     </>
   );
 };

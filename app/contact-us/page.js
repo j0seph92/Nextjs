@@ -7,14 +7,14 @@ const page = () => {
     <>
       <InnerBanner
         welcometxt="Welcome to Future Avo"
-        heading="Looking for a Reliable Custom"
-        headingcolor="Web Design Company?"
-        bancont="Are you on the hunt for the top web design agency? We're one of the best web design companies and pioneers of designing websites that make waves in the digital ocean."
+        heading="A Bright Future is Now Just "
+        headingcolor="a Call or Text Away!"
+        bancont="Whether you’re looking for outstanding logo design services or effective marketing for your brand, look no further than us. Get the support you need by contacting us right away or filling out the form below."
       />
-      <section className="contform-pg-sec p-5 m-5">
+      <section className="contform-pg-sec p-1 p-md-5 m-0 m-md-5">
         <div className="container">
           <HeadingMain label="Contact Us" extclass="text-center" />
-          <div className="footer-cont-box">
+          <div className="footer-cont-box mt-5">
             <div className="row g-5">
               <div className="col-12 col-md-6">
                 <div className="form-fields">

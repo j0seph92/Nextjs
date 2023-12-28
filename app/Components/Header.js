@@ -5,6 +5,9 @@ import Image from "next/image";
 import ButtonMain from "./ButtonMain";
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import MobileMenu from "./MobileMenu";
+import ButtonTransparentLink from "./ButtonTransparentLink";
+import { FaRocketchat } from "react-icons/fa";
 
 const handleButtonClick = () => {
   alert("Button clicked!");
@@ -31,7 +34,7 @@ const Header = () => {
             </Link>
           </div>
           <button
-            className="navbar-toggler mx-3"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -41,7 +44,6 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
           <div className="collapse navbar-collapse justify-content-center">
             <ul className="navbar-nav nav main-nav mb-2 justify-content-center mb-md-0">
               <li>
@@ -53,6 +55,103 @@ const Header = () => {
                   Home
                 </Link>
               </li>
+              {/* <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      href="/logo-design"
+                      className="list-group-item list-group-item-action"
+                    >
+                      Logo Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/web-design"
+                      className="list-group-item list-group-item-action"
+                      rel="noopener noreferrer"
+                    >
+                      Web Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/web-development"
+                      className="list-group-item list-group-item-action"
+                    >
+                      Web Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/mobile-apps"
+                      className="list-group-item list-group-item-action"
+                    >
+                      Mobile Apps
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/search-engine-optimization"
+                      className="list-group-item list-group-item-action"
+                    >
+                      SEO
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/digital-marketing"
+                      className="list-group-item list-group-item-action"
+                    >
+                      Social Media
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="list-group-item list-group-item-action dropdown-item"
+                    >
+                      Digital Marketing &raquo;
+                    </Link>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <Link
+                          href="/digital-marketing"
+                          className="list-group-item list-group-item-action"
+                        >
+                          Digital Marketing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/pay-per-click"
+                          className="list-group-item list-group-item-action"
+                        >
+                          Paid Advertising
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/search-engine-marketing"
+                          className="list-group-item list-group-item-action"
+                        >
+                          SEM
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li> */}
               {/* <!-- Navbar dropdown --> */}
               <li className="nav-item dropdown  position-static">
                 <Link
@@ -84,6 +183,12 @@ const Header = () => {
                             Logo Design
                           </Link>
                           <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            Animated Logo Design
+                          </Link>
+                          <Link
                             href="/web-design"
                             className="list-group-item list-group-item-action"
                             rel="noopener noreferrer"
@@ -94,19 +199,19 @@ const Header = () => {
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            UX Design
+                            UI/UX Design
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Graphic Design
+                            Branding Design
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Graphic Design
+                            Motion Graphics
                           </Link>
                         </div>
                       </div>
@@ -121,35 +226,30 @@ const Header = () => {
                           >
                             Web Development
                           </Link>
+
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Joomla
+                            Front-end Development
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Wordpress
+                            Wordpress Development
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Software Development
+                            Ecommerce Solutions
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Ecommerce
-                          </Link>
-                          <Link
-                            href="/mobile-apps"
-                            className="list-group-item list-group-item-action"
-                          >
-                            Mobile Apps
+                            Custom Web Portal
                           </Link>
                         </div>
                       </div>
@@ -159,13 +259,25 @@ const Header = () => {
                             Digital Marketing
                           </p>
                           <Link
-                            href="#"
+                            href="/digital-marketing"
+                            className="list-group-item list-group-item-action"
+                          >
+                            Digital Marketing
+                          </Link>
+                          <Link
+                            href="/search-engine-optimization"
                             className="list-group-item list-group-item-action"
                           >
                             SEO
                           </Link>
                           <Link
-                            href="#"
+                            href="/search-engine-marketing"
+                            className="list-group-item list-group-item-action"
+                          >
+                            SEM
+                          </Link>
+                          <Link
+                            href="/pay-per-click"
                             className="list-group-item list-group-item-action"
                           >
                             Paid Advertising
@@ -174,13 +286,56 @@ const Header = () => {
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Social Media
+                            Content Creation
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="menu-col">
+                        <div className="list-group list-group-flush">
+                          <p className="mb-0 list-group-item font-weight-bold">
+                            Mobile Applications
+                          </p>
+                          <Link
+                            href="/mobile-apps"
+                            className="list-group-item list-group-item-action"
+                          >
+                            Mobile Apps
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Content
+                            Android App Development
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            IOS App Development
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            Flutter App Development
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            React Native App Development
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            Game Development
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            AR/VR App Development
                           </Link>
                         </div>
                       </div>
@@ -189,6 +344,7 @@ const Header = () => {
                           <p className="mb-0 list-group-item font-weight-bold">
                             Technical
                           </p>
+
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
@@ -205,56 +361,25 @@ const Header = () => {
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
+                            Data Analytics
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
+                            Domain And Hosting
+                          </Link>
+                          <Link
+                            href="#"
+                            className="list-group-item list-group-item-action"
+                          >
                             Cloud Services
                           </Link>
                           <Link
                             href="#"
                             className="list-group-item list-group-item-action"
                           >
-                            Cyber Security
-                          </Link>
-                          <Link
-                            href="#"
-                            className="list-group-item list-group-item-action"
-                          >
-                            Cloud Infrastructure
-                          </Link>
-                          <Link
-                            href="#"
-                            className="list-group-item list-group-item-action"
-                          >
-                            Client Ticket Portal
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="menu-col">
-                        <div className="list-group list-group-flush">
-                          <p className="mb-0 list-group-item font-weight-bold">
-                            Consultancy
-                          </p>
-                          <Link
-                            href="#"
-                            className="list-group-item list-group-item-action"
-                          >
-                            GDPR Consultancy
-                          </Link>
-                          <Link
-                            href="#"
-                            className="list-group-item list-group-item-action"
-                          >
-                            ISO Consultancy
-                          </Link>
-                          <Link
-                            href="#"
-                            className="list-group-item list-group-item-action"
-                          >
-                            IT Consultancy
-                          </Link>
-                          <Link
-                            href="#"
-                            className="list-group-item list-group-item-action"
-                          >
-                            Microsoft Power BI
+                            Email Services
                           </Link>
                         </div>
                       </div>
@@ -288,17 +413,27 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="text-start text-lg-end">
+          <div className="text-start text-lg-end d-flex justify-content-between align-items-center">
             <div className="link-box">
               <ButtonMain
-                label="Start Trial Now"
+                label="Start Live Chat"
                 onClick={handleButtonClick}
+                extclass="me-2"
+                icon={FaRocketchat}
+              />
+            </div>
+
+            <div className="link-box">
+              <ButtonTransparentLink
+                label="(123) 123-1234"
+                onClick="tel:123456789"
                 extclass=""
               />
             </div>
           </div>
         </div>
       </header>
+      <MobileMenu />
     </>
   );
 };

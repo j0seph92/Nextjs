@@ -4,7 +4,6 @@ import VideoSec from "../Components/VideoSec";
 import InnerContentSecRight from "../Components/InnerContentSecRight";
 import InnerContentSecLeft from "../Components/InnerContentSecLeft";
 import InnerContentSecMiddle from "../Components/InnerContentSecMiddle";
-import BlogHome from "../Components/BlogHome";
 import FaqHome from "../Components/FaqHome";
 
 const page = () => {
@@ -99,28 +98,29 @@ const page = () => {
         headingcolor="Web Design Company?"
         bancont="Are you on the hunt for the top web design agency? We're one of the best web design companies and pioneers of designing websites that make waves in the digital ocean."
       />
-      <VideoSec videolink="#" videoimg="ser-img.png" />
+      <VideoSec
+        videolink="#"
+        videoimg="people-generating-images-using-artificial-intelligence-laptop-min.webp"
+      />
       <InnerContentSecRight
         sectitle="Cutting-Edge Custom Website Design Services"
-        secimg="serimg2.png"
+        secimg="979783-min.webp"
         seccont={contentRight}
       />
       <InnerContentSecMiddle
         sectitle="The Digital Dream Team with Our Custom Website Design Company"
-        secimg="inner-img.png"
+        secimg="2151003709-min.webp"
         seccont={contentMiddle}
       />
       <InnerContentSecLeft
         sectitle="Collaborate with the Best Website Design Company"
-        secimg="abt-img.jpg"
+        secimg="52392-min.webp"
         seccont={contentLeft}
       />
-      <div className="p-5"></div>
       <FaqHome
         faqDatatxt="Are you unsure of how we manage our web design projects? Do you have some questions? We've cleared the air by answering some questions."
         faqData={faqData}
       />
-      <BlogHome />
     </>
   );
 };

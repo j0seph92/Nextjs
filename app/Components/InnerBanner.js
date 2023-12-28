@@ -23,7 +23,7 @@ const InnerBanner = ({ welcometxt, bancont, heading, headingcolor }) => {
                   <span> {headingcolor}</span>
                 </h1>
                 <p className="mt-3">{bancont}</p>
-                <div className="d-flex mt-5">
+                <div className="d-flex justify-content-center justify-content-md-start mt-5">
                   <ButtonMain
                     label="Contact Us"
                     onClick={handleButtonClick}

@@ -4,7 +4,6 @@ import VideoSec from "../Components/VideoSec";
 import InnerContentSecRight from "../Components/InnerContentSecRight";
 import InnerContentSecLeft from "../Components/InnerContentSecLeft";
 import InnerContentSecMiddle from "../Components/InnerContentSecMiddle";
-import BlogHome from "../Components/BlogHome";
 import FaqHome from "../Components/FaqHome";
 
 const page = () => {
@@ -129,28 +128,29 @@ const page = () => {
         headingcolor="Website Development Company?"
         bancont="Are you interested in teaming up with the best website development company? Look no further than Future Avo, as we're one of the best web development companies. Let's begin!"
       />
-      <VideoSec videolink="#" videoimg="ser-img.png" />
+      <VideoSec
+        videolink="#"
+        videoimg="people-generating-images-using-artificial-intelligence-laptop-min.webp"
+      />
       <InnerContentSecRight
         sectitle="Leave a Lasting Impression with Our Web Development Agency"
-        secimg="serimg2.png"
+        secimg="2150714193-min.webp"
         seccont={contentRight}
       />
       <InnerContentSecMiddle
         sectitle="Workflow of Our Web Development Company"
-        secimg="inner-img.png"
+        secimg="2151003709-min.webp"
         seccont={contentMiddle}
       />
       <InnerContentSecLeft
         sectitle="What Makes Us the Best Web Development Company?"
-        secimg="abt-img.jpg"
+        secimg="1542-min.webp"
         seccont={contentLeft}
       />
-      <div className="p-5"></div>
       <FaqHome
         faqDatatxt="Get all your queries answered and confusion cleared as our team of dedicated professionals and representatives answer some of the most commonly asked questions."
         faqData={faqData}
       />
-      <BlogHome />
     </>
   );
 };

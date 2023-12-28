@@ -9,7 +9,7 @@ const ServiceBox = ({ boxlink, icon, title, text }) => {
         <div className="serboximg">
           <img
             src={icon}
-            alt="icon"
+            alt="FutureAVO"
             className="img-fluid lazy"
             width={64}
             height={64}

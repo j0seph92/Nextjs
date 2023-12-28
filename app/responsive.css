@@ -5,6 +5,10 @@
 @media all and (max-width: 991px) {
 }
 @media all and (max-width: 767px) {
+  .icsm-cont {
+    padding: 50px 10px;
+    text-align: center;
+  }
   .stories-row::before,
   .link-box {
     display: none;
@@ -43,6 +47,7 @@
     height: 500px;
     position: relative;
     top: 0;
+    width: 100%;
   }
   .abt-cont {
     padding-left: 0rem;
@@ -53,6 +58,33 @@
   }
   footer.footer-sec {
     text-align: center;
+  }
+  .ban-cont {
+    text-align: center;
+  }
+  .stories-box.stories-cont-inner .stories-img {
+    width: 300px;
+    height: 300px;
+  }
+  .stories-cont-inner .stories-cont {
+    text-align: center;
+  }
+  .serboximg-inner img {
+    position: relative;
+    height: 430px;
+  }
+  .serbox-inner-cont {
+    text-align: center;
+  }
+  .serbox-inner-cont .serboxicon {
+    top: 0;
+  }
+  .serbox-inner-cont .serboxcont h3 {
+    font-size: 36px;
+  }
+  .serbox-inner {
+    margin: 1rem 0;
+    padding: 10px;
   }
 }
 @media all and (max-width: 567px) {

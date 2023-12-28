@@ -21,32 +21,32 @@ const WhyChooseUsSec = () => {
             <div className="col-12 col-md-3">
               <ServiceBox
                 boxlink="/"
-                icon="/images/icon-1.png"
-                title="Web Design & Web Development Company"
-                text="We create functional and user-friendly web projects for businesses and individuals from diverse industries."
-              />
-            </div>
-            <div className="col-12 col-md-3">
-              <ServiceBox
-                boxlink="/"
-                icon="/images/icon-1.png"
-                title="Mobile App Development Company"
-                text="At our mobile app development company, we provide custom mobile app development services."
-              />
-            </div>
-            <div className="col-12 col-md-3">
-              <ServiceBox
-                boxlink="/"
-                icon="/images/icon-1.png"
-                title="Logo Design Company"
+                icon="/images/logo.webp"
+                title="Graphic Designing"
                 text="Professionals at our logo design company transform ideas into iconic logos that speak volumes about your brand."
               />
             </div>
             <div className="col-12 col-md-3">
               <ServiceBox
                 boxlink="/"
-                icon="/images/icon-1.png"
-                title="Digital Marketing Company"
+                icon="/images/coding.webp"
+                title="Website Designing & Development"
+                text="We create functional and user-friendly web projects for businesses and individuals from diverse industries."
+              />
+            </div>
+            <div className="col-12 col-md-3">
+              <ServiceBox
+                boxlink="/"
+                icon="/images/mobile-development.webp"
+                title="Mobile Application development"
+                text="At our mobile app development company, we provide custom mobile app development services."
+              />
+            </div>
+            <div className="col-12 col-md-3">
+              <ServiceBox
+                boxlink="/"
+                icon="/images/social-media.webp"
+                title="Digital Marketing"
                 text="Browse wide-ranging services, like search engine optimization services, pay per click marketing services, etc."
               />
             </div>

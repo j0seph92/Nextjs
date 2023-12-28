@@ -4,7 +4,7 @@ import ButtonMain from "./ButtonMain";
 import ButtonWhite from "./ButtonWhite";
 
 const divStyle = {
-  backgroundImage: 'url("../images/home-banner.png")',
+  backgroundImage: 'url("../images/1040-min.jpg")',
 };
 const handleButtonClick = () => {
   alert("Button clicked!");
@@ -23,7 +23,7 @@ const HomeBanner = () => {
                   <span> Development Company</span>
                 </h1>
                 <p className="mt-3">
-                  Code, Create, Connect—that’s the motto at our web design & web
+                  Code, Create, Connect—that's the motto at our web design & web
                   development company as we empower businesses and people with
                   user-friendly and unified website design and website
                   development services.
@@ -35,7 +35,7 @@ const HomeBanner = () => {
                     extclass="me-3"
                   />
                   <ButtonWhite
-                    label="Let’s Get Started!"
+                    label="Let's Get Started!"
                     onClick={handleButtonClick}
                     extclass=""
                   />

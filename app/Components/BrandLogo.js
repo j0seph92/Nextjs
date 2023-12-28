@@ -22,14 +22,14 @@ const BrandLogo = () => {
           start: "top bottom",
           end: "top top",
         },
-        y: 100,
+        y: 10,
         ease: "bounce",
       });
     console.log(document.body);
   }, []);
   return (
     <>
-      <section className="logobrandsec py-5">
+      <section className="logobrandsec py-0">
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-3">

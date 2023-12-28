@@ -12,7 +12,7 @@ const InnerContentSecMiddle = ({ sectitle, secimg, seccont }) => {
   };
   return (
     <>
-      <section className="InnerContentSecMiddle-sec">
+      <section className="InnerContentSecMiddle-sec py-5">
         <div className="InnerContentSecMiddle-overlay" style={divStyle}></div>
         <div className="container">
           <div className="row">

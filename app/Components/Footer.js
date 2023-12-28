@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
+import FloatingIcons from "./FloatingIcons";
 
 const divStyle = {
   backgroundImage: 'url("../images/curve.png")',
@@ -29,15 +30,17 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="cont-details">
-                <p>
+                <p className="d-flex">
                   <FaLocationDot />
-                  <Link href="#">123 Anywhere St., Any City,</Link>
+                  <Link href="#">
+                    54 State Street, Ste 804 #10949, Albany, New York 12207 US
+                  </Link>
                 </p>
                 <p>
                   <FaPhone /> <Link href="#">123-456-7890,</Link>
                 </p>
                 <p>
-                  <FaEnvelope /> <Link href="#">Support@Futureavo.com</Link>
+                  <FaEnvelope /> <Link href="#">support@futureavo.com</Link>
                 </p>
               </div>
             </div>
@@ -52,22 +55,18 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="/">Services</Link>
+                    <Link href="/why-choose-us">Why Choose Us</Link>
                   </li>
 
                   <li>
-                    <Link href="/">Why Choose Us</Link>
+                    <Link href="/success-stories">Success Stories</Link>
                   </li>
 
                   <li>
-                    <Link href="/">Success Stories</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/">About Us</Link>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/">Contact Us</Link>
+                    <Link href="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -91,6 +90,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <FloatingIcons />
     </>
   );
 };

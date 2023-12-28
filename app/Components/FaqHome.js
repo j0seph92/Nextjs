@@ -4,7 +4,7 @@ import HeadingMain from "./HeadingMain";
 import Faq from "./Faq";
 
 const divStyle = {
-  backgroundImage: 'url("../images/faq-ai.jpg")',
+  backgroundImage: 'url("../images/4343-min.webp")',
 };
 
 const FaqHome = ({ faqData, faqDatatxt }) => {
@@ -16,7 +16,7 @@ const FaqHome = ({ faqData, faqDatatxt }) => {
             <div className="col-12 col-sm-5">
               <div className="faq-img">
                 <img
-                  src="/images/faq-ai2.jpg"
+                  src="/images/6071-min.webp"
                   alt="futureAVO"
                   className="img-fluid lazy"
                   width={560}

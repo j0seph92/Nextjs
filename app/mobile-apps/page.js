@@ -4,7 +4,6 @@ import VideoSec from "../Components/VideoSec";
 import InnerContentSecRight from "../Components/InnerContentSecRight";
 import InnerContentSecLeft from "../Components/InnerContentSecLeft";
 import InnerContentSecMiddle from "../Components/InnerContentSecMiddle";
-import BlogHome from "../Components/BlogHome";
 import FaqHome from "../Components/FaqHome";
 
 const page = () => {
@@ -83,28 +82,29 @@ const page = () => {
         headingcolor="Meet Individual Requirements"
         bancont="Our mobile app development services build applications that enable seamless user experience for all users on all platforms and devices. Want to hire our app developer? Get in touch!"
       />
-      <VideoSec videolink="#" videoimg="ser-img.png" />
+      <VideoSec
+        videolink="#"
+        videoimg="people-generating-images-using-artificial-intelligence-laptop-min.webp"
+      />
       <InnerContentSecRight
         sectitle="We're a Renowned Custom Mobile App Development Company"
-        secimg="serimg2.png"
+        secimg="5837-min.webp"
         seccont={contentRight}
       />
       <InnerContentSecMiddle
         sectitle="We Create Seamless Mobile Applications That Engage Users"
-        secimg="inner-img.png"
+        secimg="2151003710-min.webp"
         seccont={contentMiddle}
       />
       <InnerContentSecLeft
         sectitle="Hire Our Custom App Development Company for Your Digital Journey"
-        secimg="abt-img.jpg"
+        secimg="27823-min.webp"
         seccont={contentLeft}
       />
-      <div className="p-5"></div>
       <FaqHome
         faqDatatxt="Are you confused about mobile app development? Not sure how it works? You can learn all about it by exploring the frequently asked questions section."
         faqData={faqData}
       />
-      <BlogHome />
     </>
   );
 };

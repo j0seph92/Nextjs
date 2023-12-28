@@ -1,13 +1,19 @@
 import React from "react";
 import HeadingMain from "./HeadingMain";
-import Image from "next/image";
 // import shape from "../../public/image_effects.jpg";
 
 const Gallery = () => {
-  const imageFiles = ["gallery-1.png", "gallery-3.png", "gallery-5.png"];
-  const imageFiles2 = ["gallery-2.png", "gallery-4.png", "gallery-6.png"];
-  const imageFiles3 = "/images/gallery-7.png";
-  const shape1 = "/images/image_effects.jpg";
+  const imageFiles = [
+    "blue-ribbon-with-red-blue-ribbon-it-min.webp",
+    "4434-min.webp",
+    "1040-min.webp",
+  ];
+  const imageFiles2 = [
+    "10477-min.webp",
+    "3891-min.webp",
+    "pair-rings-with-black-orange-design-bottom-min.webp",
+  ];
+  const imageFiles3 = "14041-min.webp";
   const shape = {
     backgroundImage: `url(/images/image_effects.jpg)`,
   };
@@ -88,14 +94,14 @@ const Gallery = () => {
               <div className="image-gallery">
                 <div className="gal-img-box">
                   <img
-                    src={imageFiles3}
+                    src={`/images/${imageFiles3}`}
                     alt="FutureAVO - Gallery"
                     className="img-fluid lazy gall-img gall-sec-front"
                     width={1200}
                     height={530}
                   />
                   <img
-                    src={imageFiles3}
+                    src={`/images/${imageFiles3}`}
                     alt="FutureAVO - Gallery"
                     className="img-fluid lazy gall-img gall-sec-back"
                     width={1200}

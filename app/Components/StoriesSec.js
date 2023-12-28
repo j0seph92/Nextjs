@@ -22,7 +22,7 @@ const StoriesSec = () => {
               <div className="stories-box">
                 <div className="stories-img">
                   <img
-                    src="/images/process-ai-1.png"
+                    src="/images/4422-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={300}
@@ -44,7 +44,7 @@ const StoriesSec = () => {
               <div className="stories-box">
                 <div className="stories-img">
                   <img
-                    src="/images/process-ai-2.png"
+                    src="/images/9629-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={300}
@@ -66,7 +66,7 @@ const StoriesSec = () => {
               <div className="stories-box">
                 <div className="stories-img">
                   <img
-                    src="/images/process-ai-3.png"
+                    src="/images/business-concept-glass-world-laptop-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={300}

@@ -14,7 +14,7 @@ const InnerContentSecLeft = ({ sectitle, secimg, seccont }) => {
                 <HeadingMain label={sectitle} extclass="" />
               </div>
             </div>
-            <div className="col-12 col-md-6 offset-md-1 position-relative">
+            <div className="col-12 col-md-6 position-relative">
               <div className="abt-img-box">
                 <img
                   src={`/images/${secimg}`}
@@ -25,7 +25,7 @@ const InnerContentSecLeft = ({ sectitle, secimg, seccont }) => {
                 />
               </div>
             </div>
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-md-6">
               <div className="abt-cont mt-5">
                 {seccont.map((item, index) => (
                   <div key={index}>
