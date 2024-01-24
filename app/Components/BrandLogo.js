@@ -7,25 +7,44 @@ import { ScrollTrigger } from "gsap/all";
 
 const BrandLogo = () => {
   useEffect(() => {
-    // GSAP animations go here
     gsap.registerPlugin(ScrollTrigger);
-    gsap
-      .timeline({
+
+    // Define a function to create the bounce animation
+    const createBounceAnimation = (element, delay) => {
+      const bounceTimeline = gsap.timeline({
         defaults: {
-          duration: 1.5,
+          duration: 2.5,
         },
-      })
-      .to(".logobox", {
-        scrollTrigger: {
-          trigger: ".logobox",
-          scrub: true,
-          start: "top bottom",
-          end: "top top",
-        },
-        y: 10,
-        ease: "bounce",
+        repeat: -1,
+        yoyo: true,
+        // scrollTrigger: {
+        //   trigger: element,
+        //   start: "10% bottom",
+        //   scrub: true,
+        // },
       });
-    console.log(document.body);
+
+      bounceTimeline.to(element, {
+        y: -40,
+        duration: 1,
+      });
+
+      // Set a delay for the timeline
+      bounceTimeline.delay(delay);
+
+      return bounceTimeline;
+    };
+
+    // Get all logobox elements
+    const logoboxes = document.querySelectorAll(".logobox");
+
+    // Create a timeline for each logobox with a staggered delay
+    logoboxes.forEach((logobox, index) => {
+      const delay = index * 2; // Adjust the delay as needed
+      createBounceAnimation(logobox, delay);
+    });
+
+    // ScrollTrigger stuff...
   }, []);
   return (
     <>

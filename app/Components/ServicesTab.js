@@ -15,16 +15,16 @@ const ServicesTab = () => {
     <>
       <section className="ser-sec my-5">
         <div className="container" style={divStyle}>
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-12 col-md-8">
               <div className="sertabbox">
                 <div className="serheading">
-                  <HeadingMain label="Services" extclass="" />
+                  <HeadingMain label="Services" extclass="text-center mb-5" />
                 </div>
                 <div className="ser-tab-main">
                   <div className="row">
                     {/* Vertical Tabs */}
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                       <div
                         className="nav flex-column nav-pills"
                         id="v-pills-tab"
@@ -90,7 +90,7 @@ const ServicesTab = () => {
                     </div>
 
                     {/* Tab Content */}
-                    <div className="col-md-9">
+                    <div className="col-md-8">
                       <div className="tab-content" id="v-pills-tabContent">
                         <div
                           className="tab-pane fade show active"

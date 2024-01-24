@@ -4,6 +4,8 @@ import "./globals.css";
 import "./responsive.css";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
+import Popup from "./Components/Popup";
+import FloatingIcons from "./Components/FloatingIcons";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "500", "700", "800", "900"],
@@ -27,6 +29,8 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <FloatingIcons />
+        {/* <Popup /> */}
         <Script src="/assets/custom-scritp.js" />
       </body>
     </html>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
-import FloatingIcons from "./FloatingIcons";
 
 const divStyle = {
   backgroundImage: 'url("../images/curve.png")',
@@ -90,7 +89,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <FloatingIcons />
     </>
   );
 };

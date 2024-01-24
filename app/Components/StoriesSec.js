@@ -18,7 +18,29 @@ const StoriesSec = () => {
             </div>
           </div>
           <div className="row mt-5 stories-row">
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-2">
+              <div className="stories-box">
+                <div className="stories-img">
+                  <img
+                    src="/images/business-concept-glass-world-laptop-min.webp"
+                    alt="FututreAVO"
+                    className="img-fluid lazy"
+                    width={300}
+                    height={300}
+                  />
+                  <span className="img-cricle"></span>
+                </div>
+                <div className="stories-cont">
+                  <h4>Our History</h4>
+                  <p>
+                    Our company is the product of masterminds and incredibly
+                    skilled and like-minded specialists who deliver what is
+                    promised.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-2">
               <div className="stories-box">
                 <div className="stories-img">
                   <img
@@ -40,7 +62,7 @@ const StoriesSec = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-2">
               <div className="stories-box">
                 <div className="stories-img">
                   <img
@@ -62,11 +84,55 @@ const StoriesSec = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-2">
               <div className="stories-box">
                 <div className="stories-img">
                   <img
-                    src="/images/business-concept-glass-world-laptop-min.webp"
+                    src="/images/programming-background-collage-min.webp"
+                    alt="FututreAVO"
+                    className="img-fluid lazy"
+                    width={300}
+                    height={300}
+                  />
+                  <span className="img-cricle"></span>
+                </div>
+                <div className="stories-cont">
+                  <h4>Our History</h4>
+                  <p>
+                    Our company is the product of masterminds and incredibly
+                    skilled and like-minded specialists who deliver what is
+                    promised.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-2">
+              <div className="stories-box">
+                <div className="stories-img">
+                  <img
+                    src="/images/17265-min.webp"
+                    alt="FututreAVO"
+                    className="img-fluid lazy"
+                    width={300}
+                    height={300}
+                  />
+                  <span className="img-cricle"></span>
+                </div>
+                <div className="stories-cont">
+                  <h4>Our History</h4>
+                  <p>
+                    Our company is the product of masterminds and incredibly
+                    skilled and like-minded specialists who deliver what is
+                    promised.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-2">
+              <div className="stories-box">
+                <div className="stories-img">
+                  <img
+                    src="/images/37070-min.webp"
                     alt="FututreAVO"
                     className="img-fluid lazy"
                     width={300}

@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import ButtonMain from "./ButtonMain";
-import ButtonWhite from "./ButtonWhite";
+import ButtonTransparentLink from "./ButtonTransparentLink";
+import { FaRocketchat } from "react-icons/fa";
 
 const divStyle = {
   backgroundImage: 'url("../images/1040-min.jpg")',
@@ -28,17 +29,19 @@ const HomeBanner = () => {
                   user-friendly and unified website design and website
                   development services.
                 </p>
-                <div className="d-flex mt-5">
+                <div className="d-flex mt-5 align-items-center">
                   <ButtonMain
-                    label="Discover More"
+                    label="Start Live Chat"
                     onClick={handleButtonClick}
-                    extclass="me-3"
+                    extclass="me-2"
+                    icon={FaRocketchat}
                   />
-                  <ButtonWhite
-                    label="Let's Get Started!"
-                    onClick={handleButtonClick}
+                  <ButtonTransparentLink
+                    label="(123) 123-1234"
+                    onClick="tel:123456789"
                     extclass=""
                   />
+                  {/* <!-- Button trigger modal --> */}
                 </div>
               </div>
             </div>

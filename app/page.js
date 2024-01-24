@@ -4,11 +4,13 @@ import WhyChooseUsSec from "./Components/WhyChooseUsSec";
 import StatsCounter from "./Components/StatsCounter";
 import Gallery from "./Components/Gallery";
 import StoriesSec from "./Components/StoriesSec";
-import VideoSec from "./Components/VideoSec";
 import FaqHome from "./Components/FaqHome";
 import AboutUs from "./Components/AboutUs";
 import Testimonial from "./Components/Testimonial";
 import ServicesTab from "./Components/ServicesTab";
+import Section3 from "./Components/Section3";
+import Portfolio from "./Components/Portfolio";
+import Contactinfo from "./Components/Contactinfo";
 
 export default function Home() {
   const faqData = [
@@ -37,11 +39,14 @@ export default function Home() {
     <>
       <HomeBanner />
       <WhyChooseUsSec />
+      <StatsCounter />
+      <Section3 />
+      <Portfolio />
       <Gallery />
       <BrandLogo />
       <ServicesTab />
-      <StatsCounter />
       <StoriesSec />
+      <Contactinfo />
       <Testimonial />
       <FaqHome
         faqDatatxt="Do you have some queries that need to be answered? Our experts
